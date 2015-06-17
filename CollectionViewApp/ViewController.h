@@ -8,8 +8,11 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+@interface ViewController : UIViewController<UICollectionViewDataSource,UICollectionViewDelegate>{
+    NSMutableArray *colors;
+}
 
+@property (weak, nonatomic) IBOutlet UICollectionView *CollectionView;
 
 @end
 
